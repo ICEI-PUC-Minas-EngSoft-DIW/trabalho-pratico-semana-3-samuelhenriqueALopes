@@ -17,7 +17,7 @@ se é um lugar com ambiente ecológico, ou parques de diversões, escolher entre
 
 ## Print do(s) wireframe(s) criado
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image.png)
 
 
 ## Print da home-page criada

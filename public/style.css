@@ -1,128 +1,161 @@
 /* Reset básico */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
 }
 
-/* Header */
-.site-header {
-    background: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: sticky; /* exemplo de position */
-    top: 0;
+/* Container geral */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 50px);
+  max-width: 1200px;       /* largura máxima centralizada */
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;        /* fundo branco para destacar */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.site-header h1 {
-    margin-bottom: 10px;
+/* Barra superior */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.urlbar {
+  flex: 1;
+  margin: 0 8px;
+  padding: 6px;
+}
+.top-actions button {
+  margin-left: 6px;
 }
 
-/* Menu */
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #e9e9e9;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+/* Botões menu lateral */
+.menu {
+  width: 100%;
+}
+.menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+.menu button:hover {
+  background: #bbb;
 }
 
-/* Hero */
-.hero {
-    text-align: center;
-    padding: 30px;
-    background: #e1e1e1;
+/* Avaliações */
+.avaliacoes {
+  text-align: center;
+  width: 100%;
 }
-
-.hero img {
-    margin-top: 15px;
-    border-radius: 10px;
+.avaliacoes h4 {
+  margin-bottom: 8px;
 }
-
-/* Artigos */
-.artigos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
+.avaliacoes ol {
+  list-style: none;
+  padding: 0;
 }
-
-.card {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
+.avaliacoes li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #aaa;
+  background: #fff;
+  border-radius: 6px;
 }
-
-.card img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.star {
+  width: 16px;
+  height: 16px;
 }
 
 /* Login */
-.login {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.login-form input {
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.login-form button {
+  padding: 8px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.login-form button:hover {
+  background: #0056b3;
 }
 
-.login form {
-    display: flex;
-    flex-direction: column;
+/* Conteúdo principal */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.search-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.search-filters input {
+  flex: 1;
+  padding: 8px;
+}
+.search-filters button {
+  padding: 8px 12px;
 }
 
-.login label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
+/* Espaços para imagens (X) */
+.img-slot {
+  width: 100%;
+  height: 120px;
+  border: 2px dashed #aaa;
+  background: #fafafa;
 }
-
-.login input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
-
-.login button {
-    background: #222;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.login button:hover {
-    background: #444;
-}
-
-/* Footer */
-.site-footer {
-    text-align: center;
-    padding: 15px;
-    background: #222;
-    color: #fff;
-    margin-top: 20px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
 }
