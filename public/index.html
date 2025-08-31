@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Wireframe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <h1>Meu Projeto</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de destaque -->
+        <section class="hero">
+            <h2>Bem-vindo ao Projeto</h2>
+            <p>Este é um site de exemplo baseado no wireframe solicitado.</p>
+            <img src="https://picsum.photos/id/1015/600/300" alt="Imagem destaque">
+        </section>
+
+        <!-- Artigos -->
+        <section class="artigos">
+            <article class="card">
+                <h3>Artigo 1</h3>
+                <img src="https://picsum.photos/id/1025/300/200" alt="Imagem artigo 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+
+            <article class="card">
+                <h3>Artigo 2</h3>
+                <img src="https://picsum.photos/id/1035/300/200" alt="Imagem artigo 2">
+                <p>Aliquam erat volutpat. Integer nec turpis non urna malesuada.</p>
+            </article>
+
+            <article class="card">
+                <h3>Artigo 3</h3>
+                <img src="https://picsum.photos/id/1041/300/200" alt="Imagem artigo 3">
+                <p>Sed facilisis leo at libero tincidunt, nec malesuada urna porta.</p>
+            </article>
+        </section>
+
+        <!-- Formulário de Login -->
+        <section class="login">
+            <h2>Login</h2>
+            <form>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>&copy; 2025 - Meu Projeto. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

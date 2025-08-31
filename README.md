@@ -8,10 +8,11 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Samuel Henrique Alvarenga e Lopes
+- Matricula:  904718
+- Proposta de projeto escolhida: Site para atrações de lugarres
+- Breve descrição sobre seu projeto: Criei um site, para descorbri atrações de um lugar de acordo com valor, horário de funcionamento,
+se é um lugar com ambiente ecológico, ou parques de diversões, escolher entre os melhores avalidos, etc.
 
 
 ## Print do(s) wireframe(s) criado
